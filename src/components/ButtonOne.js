@@ -8,7 +8,7 @@ const ButtonOne = (props) => {
         setonclick(!clickk)
       }
       const style1 = {
-        color: 'white',
+        color: '#000',
         padding: '10px',
         backgroundColor:'green'
       };
