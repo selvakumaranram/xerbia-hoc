@@ -1,10 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import stylesWrapper from './../HOC/stylesWrapper';
 
 const ButtonOne = (props) => {
+    const [onclick,setonclick]=useState(props.change)
+    const clickk=onclick
+   const boxClick = (e) => {
+        setonclick(!clickk)
+      }
+    
     return (
-        <button style={props.styles}>I am ButtonOne</button>
+        <button style={onclick?props.styles:props.styles.change} onClick={(e)=>boxClick(e)}>I am ButtonOne</button>
     )
 }
 
 export default stylesWrapper(ButtonOne);
+

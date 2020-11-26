@@ -4,8 +4,8 @@ import commonStyles from './../styles/commonStyles';
 
 const translateProps = (props) => {
     let _styles = {...commonStyles.default}
-    if(props.enable){
-        _styles = {..._styles, ...commonStyles.enable};  
+    if(props.change){
+        _styles = {..._styles, ...commonStyles.change};  
     }
     const newProps = {...props,styles:_styles }
     return newProps;
