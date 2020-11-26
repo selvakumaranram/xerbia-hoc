@@ -7,9 +7,13 @@ const ButtonOne = (props) => {
    const boxClick = (e) => {
         setonclick(!clickk)
       }
-    
+      const style1 = {
+        color: 'white',
+        padding: '10px',
+        backgroundColor:'green'
+      };
     return (
-        <button style={onclick?props.styles:props.styles.change} onClick={(e)=>boxClick(e)}>I am ButtonOne</button>
+        <button style={onclick?style1:props.styles} onClick={(e)=>boxClick(e)}>I am ButtonOne</button>
     )
 }
 
